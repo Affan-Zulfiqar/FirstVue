@@ -11,10 +11,18 @@
             <div class="hidden lg:flex flex-grow" id="navbar-collapse">
                 <ul class="flex flex-col mt-3 mb-1 lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0">
                     <li>
-                        <a href="#" class="block text-gray-500 hover:text-gray-300 py-2 md:mx-2">Home</a>
+                        <div class="block text-gray-500 hover:text-gray-300 py-2 md:mx-2">
+                            <RouterLink to="/">
+                                Home
+                            </RouterLink>
+                        </div>
                     </li>
                     <li>
-                        <a href="#" class="block text-gray-500 hover:text-gray-300 py-2 md:mx-2">About</a>
+                        <div class="block text-gray-500 hover:text-gray-300 py-2 md:mx-2">
+                            <RouterLink to="/about">
+                                About
+                            </RouterLink>
+                        </div>
                     </li>
                     <li>
                         <a href="#" class="block text-gray-500 hover:text-gray-300 py-2 md:mx-2">Features</a>

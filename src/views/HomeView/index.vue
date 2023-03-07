@@ -11,6 +11,7 @@
                     tumeric truffaut hexagon try-hard chambray.</p>
                 <div class="flex justify-center">
                     <button
+                        @click="showModalForm"
                         class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
                     <button
                         class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Button</button>
@@ -693,4 +694,32 @@
         </div>
     </div>
 </section>
+
+
+<Modal v-if="this.toggleModal" />
+
 </template>
+
+
+<script>
+
+    import Modal from '../../components/modals/index.vue'
+
+    export default{
+        data: function(){
+            return{
+                toggleModal: (Boolean = false),
+            }
+            
+        },
+        components:{
+            Modal
+        },
+        methods:{
+            showModalForm(){
+                console.log('in')
+                this.toggleModal = !this.toggleModal;
+            }
+        }
+    }
+</script>
