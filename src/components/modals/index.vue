@@ -38,8 +38,7 @@
 export default{
     methods:{
         hideParentModal(){
-            this.$parent.tog
-            odal = false;
+            this.$parent.toggleModal = false;
         }
     }
 }

@@ -9,4 +9,10 @@ import Footer from './components/Footer/index.vue'
   <Header></Header>
   <RouterView></RouterView>
   <Footer></Footer>
+  
 </template>
+
+
+
+
+

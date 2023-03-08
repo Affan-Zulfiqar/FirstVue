@@ -35,9 +35,12 @@
                     </li>
                 </ul>
                 <div class="flex my-3 lg:my-0">
+
                     <button
                         class="bg-transparent hover:bg-white text-white hover:text-gray-900 py-1 px-3 rounded border border-solid border-white mr-2">
-                        Sign In
+                        <RouterLink to="/signin">
+                            Sign In
+                        </RouterLink>
                     </button>
                     <button
                         class="bg-purple-700 hover:bg-purple-800 text-white py-1 px-3 rounded border border-solid border-purple-700 hover:border-purple-800">
